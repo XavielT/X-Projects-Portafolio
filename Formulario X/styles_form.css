@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Syles pal contenedor */
+  .form-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    width: 650px;
+  }
+  /* Styles pa' Titulo */
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  /* Styles pa' los inputs */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Boton Enviar */
+  button {
+    background-color: #ffc400;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Style pa' el hover del boton y el tiempo de transicion */
+  button:hover {
+    background-color: #efa300;
+    transition: 0.3s;
+  }
+  

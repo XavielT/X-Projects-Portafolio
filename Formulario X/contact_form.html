@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Contacto XT</title>
+    <link rel="preload" href="styles_form.css">
+    <link rel="stylesheet" href="styles_form.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <!-- Contenedor del Form -->
+      <h1>Formulario De Contacto</h1>
+      <p>
+        Enviar un correo electrónico. Todos los campos con el asterisco (*) son
+        obligatorios.
+      </p>
+      <form action="#" method="post">
+        <!-- Formulario -->
+        <label for="nombre">Nombre *</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          required
+          minlength="3"
+          maxlength="20"
+        />
+
+        <label for="correo">Correo electrónico *</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <label for="asunto">Asunto *</label>
+        <input
+          type="text"
+          id="asunto"
+          name="asunto"
+          required
+          minlength="5"
+          maxlength="50"
+        />
+
+        <label for="mensaje">Mensaje *</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
