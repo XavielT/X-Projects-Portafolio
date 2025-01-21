@@ -74,6 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         // Mensaje de exito para el usuario
         echo "Gracias por contactarme! Tu mensaje ha sido recibido correctamente.";
+        exit();
     } catch (PDOException $e) {
         // Por si hay un error al insertar los datos
         die("Error al guardar el mensaje: " . $e->getMessage());
