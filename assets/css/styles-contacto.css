@@ -1,0 +1,129 @@
+:root{
+    --Primary: #0062ff;
+    --Secondary: #7c49e1;
+    --Cards_Buttons: #d900ff;
+    --Nav: #ffffff;
+    --Hub: #ffb300;
+    --HubShadow: #d0d0d0;
+    --Bckgr_divs: rgba(98, 98, 98, 0.3);
+    --Black: #000000;
+    --White: #ffffff;
+    --Info: #acacac;
+    --HubDark: #ff8f00;
+    --Bckgr_form: rgba(0, 0, 0, 0.3);
+    --HubShadow2: rgb(208, 208, 208);
+    --AmarilloHub: #ffc400;
+    --InputShadow: rgb(208, 208, 208);
+}
+
+body {
+    background: linear-gradient(to bottom, var(--Black), var(--Hub));
+}
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spoiler-Script';
+    src: url(../fonts/Spoilers-Script.woff2) format('woff2'),
+         url(../fonts/Spoilers-Script.woff) format('woff'),
+         url(../fonts/Spoilers-Script.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Syles pal contenedor */
+.form-Container {
+    background-color: var(--Bckgr_form);
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px rgb(208, 208, 208);
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);*/
+    padding: 30px;
+    width: 650px;
+    /*margin-top: 3%;*/
+    margin: 3% 25% 3%;
+  }
+  /* Styles pa' Titulo */
+  h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'ROLNER', sans-serif;
+  }
+
+  .form-Container h1 {
+    color: var(--Hub);
+  }
+
+  .form-Container p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'ROLNER', sans-serif;
+    color: var(--White);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--White);
+    
+  }
+  /* Styles pa' los inputs */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: var(--White);
+  }
+
+  input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none;
+    /*border: 1px solid var(--Hub);*/
+    box-shadow: 1px 1px 15px var(--InputShadow);
+    transition: 0.1s ease;
+  }
+  
+  /* Boton Enviar */
+  button {
+    background-color: var(--Black);
+    color: var(--HubDark);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'ROLNER', sans-serif;
+    font-size: 18px;
+  }
+  
+  /* Style pa' el hover del boton y el tiempo de transicion */
+  button:hover {
+    background-color: var(--HubDark);
+    transition: 0.3s ease;
+    color: var(--Black);
+    font-size: 19.3px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.7);
+  }

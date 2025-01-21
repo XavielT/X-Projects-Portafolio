@@ -1,0 +1,78 @@
+/* styles-section-container */
+:root{
+    --Primary: #0062ff;
+    --Secondary: #7c49e1;
+    --Cards_Buttons: #d900ff;
+    --Nav: #ffffff;
+    --Hub: #ffb300;
+    --HubShadow: #d0d0d0;
+    --Bckgr_divs: rgba(98, 98, 98, 0.3);
+    --Bckgr_divs2: rgba(0, 0, 0, 0.35);
+    --Black: #000000;
+    --White: #ffffff;
+    --Info: #acacac;
+    --HubDark: #ff8f00;
+    --Bckgr-container: rgba(0, 0, 0, 0.3);
+}
+
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Bckgr-container);
+    border-radius: 15px;
+    margin: 4%;
+    box-shadow: var(--HubShadow) 1px 1px 23px;
+    padding: 2%;
+}
+
+/* .section-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Bckgr-container);
+    border-radius: 15px;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    z-index: 1;
+}
+
+.section-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--Black), var(--Hub));
+    border-radius: 15px;
+    z-index: -1;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+} */
+
+.section-container h1 {
+    font-size: 28px;
+    font-family: 'ROLNER', sans-serif;
+    color: var(--Hub);
+}
+
+.section-container p {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--White);
+}
+
+.section-text {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--Bckgr_divs);
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: var(--HubShadow) 1px 1px 10px;
+    margin-bottom: 20px;
+}

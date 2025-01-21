@@ -1,0 +1,17 @@
+:root{
+    --Primary: #0062ff;
+    --Secondary: #7c49e1;
+    --Cards_Buttons: #d900ff;
+    --Nav: #ffffff;
+    --Hub: #ffb300;
+    --HubShadow: #d0d0d0;
+    --Bckgr_divs: rgba(98, 98, 98, 0.3);
+    --Black: #000000;
+    --White: #ffffff;
+    --Info: #acacac;
+    --HubDark: #ff8f00;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--Black), var(--Hub));
+}

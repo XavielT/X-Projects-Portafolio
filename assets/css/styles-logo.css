@@ -1,0 +1,64 @@
+:root{
+    --Primary: #0062ff;
+    --Secondary: #7c49e1;
+    --Cards_Buttons: #00eeff;
+    --Nav: #ffffff;
+    --Hub: #ffb300;
+    --HubShadow: #d0d0d0;
+    --Bckgr_divs: rgba(98, 98, 98, 0.3);
+    --Black: #000000;
+    --White: #ffffff;
+    --Info: #acacac;
+    --HubDark: #ff8f00;
+    /*--HubRGB: rgb(255, 179, 0);*/
+}
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spoiler-Script';
+    src: url(../fonts/Spoilers-Script.woff2) format('woff2'),
+         url(../fonts/Spoilers-Script.woff) format('woff'),
+         url(../fonts/Spoilers-Script.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* X del logo */
+span.X_logo {
+    font-size: 45px;
+    color: var(--White);
+    font-family: 'Spoiler-Script','ROLNER', sans-serif;
+}
+
+/* Projects del logo */
+span.Hub{
+    font-size: 38px;
+    background-color: var(--Hub);
+    border-radius: 6px;
+    padding: 0 5px;
+    box-shadow: var(--HubShadow) 1px 1px 10px;
+    font-family: 'ROLNER', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

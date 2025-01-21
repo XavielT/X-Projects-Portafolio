@@ -1,0 +1,57 @@
+:root{
+    --Primary: #0062ff;
+    --Secondary: #7c49e1;
+    --Cards_Buttons: #00eeff;
+    --Nav: #ffffff;
+    --Hub: #ffb300;
+    --HubShadow: #d0d0d0;
+    --Bckgr_divs: rgba(98, 98, 98, 0.3);
+    --Black: #000000;
+    --White: #ffffff;
+    --HubDark: #ff8f00;
+}
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spoiler-Script';
+    src: url(../fonts/Spoilers-Script.woff2) format('woff2'),
+         url(../fonts/Spoilers-Script.woff) format('woff'),
+         url(../fonts/Spoilers-Script.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footPage {
+    background-color: var(--Black);
+    color: var(--White);
+    margin: 20px 5px 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--HubShadow);
+}
+
+footer{
+    padding: 10px;
+    font-family: 'ROLNER', sans-serif;
+    font-size: 17px;
+}

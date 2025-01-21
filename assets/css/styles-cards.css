@@ -1,0 +1,105 @@
+:root{
+    --Primary: #0062ff;
+    --Secondary: #7c49e1;
+    --Cards_Buttons: #d900ff;
+    --Nav: #ffffff;
+    --Hub: #ffb300;
+    --HubShadow: #d0d0d0;
+    --Bckgr_divs: rgba(98, 98, 98, 0.3);
+    --Black: #000000;
+    --White: #ffffff;
+    --Info: #acacac;
+    --HubDark: #ff8f00;
+}
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spoiler-Script';
+    src: url(../fonts/Spoilers-Script.woff2) format('woff2'),
+         url(../fonts/Spoilers-Script.woff) format('woff'),
+         url(../fonts/Spoilers-Script.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Cards */
+
+.Section_Own_projects {
+    padding: 20px;
+    text-align: center;
+}
+
+.Own_projects,.University_projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+.Project_card {
+    background-color: var(--Bckgr_divs);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: var(--HubShadow) 1px 1px 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.Project_image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.Project_name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--White);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Open_project_button {
+    background-color: var(--Black);
+    color: var(--HubDark);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+    font-family: 'ROLNER', sans-serif;
+}
+
+.Open_project_button:hover {
+    background-color: var(--HubDark);
+    color: var(--Black);
+    font-size: 18px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.7);
+    transition: 0.3s ease;
+}
+
+.Project_image:hover{
+transform: scale(1.1);
+    transition: transform 0.3s ease;
+}

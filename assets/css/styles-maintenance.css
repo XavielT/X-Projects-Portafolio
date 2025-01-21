@@ -1,0 +1,108 @@
+:root{
+    --Primary: #0062ff;
+    --Secondary: #7c49e1;
+    --Cards_Buttons: #00eeff;
+    --Nav: #ffffff;
+    --Hub: #ffb300;
+    --HubShadow: #d0d0d0;
+    --Bckgr_divs: rgba(98, 98, 98, 0.3);
+    --Black: #000000;
+    --White: #ffffff;
+    --Info: #acacac;
+    --HubDark: #ff8f00;
+}
+
+/* Fondo */
+body {
+    background: linear-gradient(to bottom, var(--Black), var(--Hub));
+}
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spoiler-Script';
+    src: url(../fonts/Spoilers-Script.woff2) format('woff2'),
+         url(../fonts/Spoilers-Script.woff) format('woff'),
+         url(../fonts/Spoilers-Script.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Titulos */
+h1,h2,h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 38px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Contenedor de la alerta */
+.maintenance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: #00000050;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffffff;
+    margin-bottom: 10%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.maintenance h2 {
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: var(--White);
+}
+
+.maintenance p {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: var(--White);
+}
+
+.btn-go-back-index {
+    background-color: var(--Black);
+    color: var(--HubDark);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*width: 100%;*/
+    font-family: 'ROLNER', sans-serif;
+    font-size: 18px;
+}
+
+.btn-go-back-index:hover {
+    background-color: var(--HubDark);
+    transition: 0.3s ease;
+    color: var(--Black);
+    font-size: 19.3px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.7);
+}

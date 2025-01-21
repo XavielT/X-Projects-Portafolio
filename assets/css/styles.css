@@ -1,0 +1,132 @@
+:root{
+    --Primary: #0062ff;
+    --Secondary: #7c49e1;
+    --Cards_Buttons: #d900ff;
+    --Nav: #ffffff;
+    --Hub: #ffb300;
+    --HubShadow: #d0d0d0;
+    --Bckgr_divs: rgba(98, 98, 98, 0.3);
+    --Bckgr_divs2: rgba(0, 0, 0, 0.35);
+    --Black: #000000;
+    --White: #ffffff;
+    --Info: #acacac;
+    --HubDark: #ff8f00;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--Black), var(--Hub));
+}
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spoiler-Script';
+    src: url(../fonts/Spoilers-Script.woff2) format('woff2'),
+         url(../fonts/Spoilers-Script.woff) format('woff'),
+         url(../fonts/Spoilers-Script.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,h2,h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+h1 {
+    font-size: 38px;
+    font-family: 'ROLNER', sans-serif;
+}
+*/
+
+h2 {
+    font-size: 28px;
+    font-family: 'Gefica', sans-serif;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 22px;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    font-family: 'Gefica', sans-serif;
+    color: var(--White);
+}
+
+span.Sub_Dev{
+    font-size: 17px;
+    padding: 10px;
+    color: var(--White);
+}
+
+p.P_xt_info{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    /*color: rgb(0, 0, 0);*/
+    padding: 5px;
+    color: var(--White);
+}
+
+div.XT_dev{
+    background-color: var(--Bckgr_divs);
+    backdrop-filter: blur(5px);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: var(--HubShadow) 1px 1px 15px;
+    margin: 40px 10px 10px;
+    color: var(--Hub);
+    z-index: 1;
+    top: 26%;
+    left: 38%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.destacados-title{
+    margin-top: 50px;
+    background-color: var(--Bckgr_divs2);
+    border-radius: 6px;
+    /*padding: 0 5px ;*/
+    box-shadow: var(--HubShadow) 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.destacados-title h2{
+    color: var(--Hub);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1px 3px;
+}
+
+/* .svg-developer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+} */
+
+/* div.XT_info{
+    background-color: var(--HubShadow);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+} */
+

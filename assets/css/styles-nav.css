@@ -1,0 +1,82 @@
+:root{
+    --Primary: #0062ff;
+    --Secondary: #7c49e1;
+    --Cards_Buttons: #00eeff;
+    --Nav: #ffffff;
+    --Hub: #ffb300;
+    --HubShadow: #d0d0d0;
+    --Bckgr_divs: rgba(98, 98, 98, 0.3);
+    --Black: #000000;
+    --White: #ffffff;
+    --Info: #acacac;
+    --HubDark: #ff8f00;
+}
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spoiler-Script';
+    src: url(../fonts/Spoilers-Script.woff2) format('woff2'),
+         url(../fonts/Spoilers-Script.woff) format('woff'),
+         url(../fonts/Spoilers-Script.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav{
+    background-color: var(--Hub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--HubShadow);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--Black);
+    font-size: 1.2rem;
+    font-family: 'ROLNER', sans-serif;
+}
+
+nav a:hover{
+    color: var(--White);
+    font-size: 1.25rem;
+    transition: 0.25s ease;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+nav a.active{
+    background-color: var(--HubDark);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--White);
+    font-weight: bold;
+}
