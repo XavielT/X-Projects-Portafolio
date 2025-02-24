@@ -62,3 +62,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+h1 {
+    gap: 18px;
+}
